@@ -21,7 +21,7 @@ CFLAGS += -DWITH_BOOTOBJS
 endif
 
 ifndef VERSION
-VERSION=$(shell ../../tools/version.sh)
+VERSION=$(shell git log --pretty=format:'%h' -n 1)
 endif
 
 CFLAGS+=-DVERSION=\"$(VERSION)\"
