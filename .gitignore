@@ -1,3 +1,9 @@
 *~
 .DS_Store
-ipodpatcher
+
+firmware/*.zip
+firmware/*.bin
+firmware/*.img
+firmware/*.7z
+
+ipodpatcher/ipodpatcher

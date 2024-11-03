@@ -1,15 +1,22 @@
-# iPod Patcher
+# iPod Patcher and iPod Loader
 
 This application lets you load and restore firmware on old ipods.
 
-It was originally written by:
+And this code was "forked" from:
+
+- [ipodpatcher](https://github.com/mguentner/rockbox/blob/master/rbutil/ipodpatcher/)
+- [ipodloader2](https://github.com/crozone/ipodloader2)
+- Download the correct [Rockbox Firmware archive from the Rockbox website](https://www.rockbox.org/download/byhand.cgi). Note I had to use the nightly build for my ipod video 5th gen.
+
 ```
-(C) Dave Chapman 2006-2009
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+unzip ~/Downloads/rockbox-ipodvideo-20241102.zip
+rm -rf /media/rob/ROBS\ IPOD/.rockbox/
+mv ~/Downloads/rockbox-ipodvideo-20241102/.rockbox /media/rob/ROBS\ IPOD/
 ```
 
-And this code was "forked" from: 
+- reboot it by holding down Menu + Select for 6 seconds.
+
+--- 
 
 ## Background
 
@@ -54,6 +61,9 @@ I have not tried windows yet.
 
 ## References
 
+- https://www.rockbox.org/
 - http://www.ipodlinux.org/
+- https://www.rockbox.org/daily.shtml
 - https://github.com/Rockbox/rockbox
 - https://github.com/mguentner/rockbox/blob/master/rbutil/ipodpatcher/
+- https://github.com/crozone/ipodloader2
