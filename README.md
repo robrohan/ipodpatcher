@@ -3,14 +3,16 @@
 The code here is how I successfully loaded Rockbox onto an old video ipod 5th 
 generation in 2024.
 
+![my pod](./docs/mypod.jpg)
+
 ## High Level Steps
 
 Here are the high level steps:
 
-1. Have an ipod formatted on windows using iTunes (needs to be fat32 file system)
+1. Have an ipod formatted on windows using iTunes (it needs to be fat32 file system)
 1. Use "ipodpatcher" to backup ipod firmware (see `Makefile`)
 1. Build the boot loader in order to duel boot ipod os and linux - "ipodloader2" (see `Makefile`)
-1. Copy the boot loader config (`./firmware/loader.conf`) to the root of the ipod
+1. Copy the boot loader config (`./firmware/loader.cfg`) to the root of the ipod
 1. Copy the [correct version of Rockbox](https://www.rockbox.org/daily.shtml) 
 onto the ipod mounted file system in the `/.rockbox` directory.
 1. Reboot reboot the ipod (by holding down `Menu + Select` for 6 seconds) and select
